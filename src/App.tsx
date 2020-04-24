@@ -62,7 +62,7 @@ const Asset = ({ url, motion, audio, camera }: any) => {
   useFrame((_, delta) => {
     if (ready) {
       // console.log(three.camera)
-      // return helper.update(delta)
+      return helper.update(delta)
     }
   })
 
