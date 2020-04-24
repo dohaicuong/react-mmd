@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import * as Ammo from 'ammo.js'
+// @ts-ignore
+Ammo().then(ammo => global.Ammo = ammo)
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
