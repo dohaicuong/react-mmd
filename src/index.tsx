@@ -9,8 +9,8 @@ import * as Ammo from 'ammo.js'
 Ammo().then(ammo => global.Ammo = ammo)
 
 const routes = [
-  { exact: true, path: '/', component: React.lazy(() => import('./pages/SpeechReg')) },
-  { exact: true, path: '/mmd', component: React.lazy(() => import('./pages/MMD')) },
+  { exact: true, path: '/', component: React.lazy(() => import('./pages/MMD')) },
+  { exact: true, path: '/speech', component: React.lazy(() => import('./pages/SpeechReg')) },
 ]
 
 ReactDOM.render(
