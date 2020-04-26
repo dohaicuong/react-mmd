@@ -1,7 +1,7 @@
 import React from 'react'
 import annyang from 'annyang'
 
-const SpeechReg: React.FC = () => {
+export default () => {
   const [isStart, setIsStart] = React.useState(false)
 
   React.useEffect(() => {
@@ -39,4 +39,3 @@ const SpeechReg: React.FC = () => {
     </button>
   )
 }
-export default SpeechReg

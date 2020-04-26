@@ -74,7 +74,7 @@ const Miku: React.FC = () => {
   React.useEffect(() => {
     if(actions && actions.waving) {
       annyang.addCommands({
-        'hello *name': () => {
+        'hello': () => {
           play(actions.waving)
           setTimeout(() => {
             const msg = new SpeechSynthesisUtterance('こにちわ')
