@@ -38,15 +38,11 @@ const Model: React.FC<ModelProps> = ({ url, motion, audio, camera }: any) => {
       })
     }
 
-
     // eslint-disable-next-line
   }, [motion, mmd.visible])
 
   useFrame((_, delta) => {
-    if (ready) {
-      // console.log(three.camera)
-      return helper.update(delta)
-    }
+    if (ready) helper.update(delta)
   })
 
   return <primitive object={mmd} dispose={null} />

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useFrame } from 'react-three-fiber'
+// import { useFrame } from 'react-three-fiber'
 
 type BoxProps = {
   position: any
@@ -9,9 +9,9 @@ const Box: React.FC<BoxProps> = (props) => {
   const [hovered, setHover] = React.useState(false)
   const [active, setActive] = React.useState(false)
 
-  useFrame(() => {
-    if (mesh && mesh.current) return mesh.current.rotation.x = mesh.current.rotation.y += 0.01
-  })
+  // useFrame(() => {
+  //   if (mesh && mesh.current) return mesh.current.rotation.x = mesh.current.rotation.y += 0.01
+  // })
 
   return (
     <mesh
